@@ -1,0 +1,40 @@
+{
+    "sessdata": {
+        "description": "SESSDATA",
+        "type": "string",
+        "hint": "B站Cookie中的SESSDATA值",
+        "obvious_hint": true
+      },
+    "bili_jct": {
+        "description": "bili_jct",
+        "type": "string",
+        "hint": "B站Cookie中的bili_jct值"
+      },
+    "buvid3": {
+        "description": "buvid3",
+        "type": "string",
+        "hint": "B站Cookie中的buvid3值"
+      },
+    "buvid4": {
+        "description": "buvid4",
+        "type": "string",
+        "hint": "B站Cookie中的buvid4值"
+      },
+    "dedeuserid": {
+        "description": "DedeUserID",
+        "type": "string",
+        "hint": "B站Cookie中的DedeUserID值"
+    },
+    "whitelist": {
+        "description": "允许操作的用户白名单",
+        "type": "list",
+        "hint": "只有在此列表中的用户才能执行文件修改操作，支持QQ号、群号",
+        "default": []
+      },
+      "dir_path":{
+        "description":"文件目录",
+        "type":"string",
+        "hint":"该目录用于储存所有用户上次更新时的动态记录。例如latest_dynamic_123.json储存UID为123的用户的最新动态"
+
+      }
+}

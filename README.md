@@ -1,14 +1,41 @@
-# astrbot-plugin-helloworld
+# Bilibili Influencer Monitor Plugin 
 
-AstrBot 插件模板 / A template plugin for AstrBot plugin feature
+## Overview
+This is a custom plugin designed for a knowledge-base chatbot system. It automatically monitors an influencer on Bilibili and updates the knowledge base with new content.
 
-> [!NOTE]
-> This repo is just a template of [AstrBot](https://github.com/AstrBotDevs/AstrBot) Plugin.
-> 
-> [AstrBot](https://github.com/AstrBotDevs/AstrBot) is an agentic assistant for both personal and group conversations. It can be deployed across dozens of mainstream instant messaging platforms, including QQ, Telegram, Feishu, DingTalk, Slack, LINE, Discord, Matrix, etc. In addition, it provides a reliable and extensible conversational AI infrastructure for individuals, developers, and teams. Whether you need a personal AI companion, an intelligent customer support agent, an automation assistant, or an enterprise knowledge base, AstrBot enables you to quickly build AI applications directly within your existing messaging workflows.
+---
 
-# Supports
+## Features
 
-- [AstrBot Repo](https://github.com/AstrBotDevs/AstrBot)
-- [AstrBot Plugin Development Docs (Chinese)](https://docs.astrbot.app/dev/star/plugin-new.html)
-- [AstrBot Plugin Development Docs (English)](https://docs.astrbot.app/en/dev/star/plugin-new.html)
+- Automatically monitors an influencer’s content using their UID  
+- Detects new posts and videos  
+- Extracts and structures content into a knowledge base  
+- Supports both manual data ingestion and automated updates  
+
+---
+
+## Commands
+
+- `/scrape 视频 <bvid>`  
+  Manually fetch and upload video information to the knowledge base  
+
+- `/scrape 动态 <did>`  
+  Manually fetch and upload post (dynamic) information  
+
+- `/自动更新 <UID>`  
+  Start monitoring a specific influencer and automatically update new content  
+
+- `/停止自动更新`  
+  Stop all monitoring processes  
+
+---
+
+## Example
+- `/自动更新 1234`  
+  Starts automatically monitoring the influencer with UID `1234` and updates new content into the knowledge base.
+
+## Tech Stack
+
+- bilibili-api  
+
+---
