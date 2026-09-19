@@ -1,4 +1,4 @@
-# Bilibili Influencer Monitor Plugin 
+# Bilibili Content Creator Monitor Plugin 
 
 ## Overview
 This is a custom plugin designed for a knowledge-base chatbot system. It automatically monitors an influencer on Bilibili and updates the knowledge base with new content.
